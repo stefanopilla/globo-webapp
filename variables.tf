@@ -37,14 +37,14 @@ variable "api_key" {
   description = "(Required) API key for web app to talk to SaaS platform."
 }
 
+# TFC variables
 variable "tfe_organization" {
   type        = string
-  description = "(Required) Name of the Terraform organization"
+  description = "(Required) Name of TFC organization."
 }
 
-variable "tfe_workspace" {
+variable "tfe_workspace_name" {
   type        = string
-  description = "(Required) Name of the Terraform workspace"
+  description = "(Required) Name of networking workspace to get information."
 }
-
 
